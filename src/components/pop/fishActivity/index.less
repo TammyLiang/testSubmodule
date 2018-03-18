@@ -1,0 +1,244 @@
+.fish-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    z-index: 13;
+    overflow-y: scroll;
+    -webkit-user-select:none;
+    .fish-bg{
+        margin: 2rem auto 0;
+        position: relative;
+        width: 90%;
+        height: 9.1rem;
+        text-align: center;
+        background: url(../../../images/activity/fish/bg.png) no-repeat;
+        background-size: 100% 100%;
+        .closebtn{
+            position: absolute;
+            top: -1.3rem;
+            right: 0;
+            width: .75rem;
+            height: .58rem;
+            background: url(../../../images/activity/fish/close.png) no-repeat;
+            background-size: 100% 100%;
+            z-index: 2;
+        }
+        .header{
+            position: absolute;
+            top: -1.7rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 115%;
+            height: 3.5rem;
+            background: url(../../../images/activity/fish/head.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        .body{
+            position: absolute;
+            left: 50%;
+            top: 2.8rem;
+            transform: translateX(-50%);
+            width: 3.95rem;
+            height: 4.5rem;
+            background: url(../../../images/activity/fish/line.png) no-repeat;
+            background-size: 100% 100%;
+            z-index: 2;
+            .content{
+                position: absolute;
+                top: -1rem;
+                width: 4.8rem;
+                div{
+                    display: flex;
+                    margin-bottom: .1rem;
+                    color: #010c4d;
+                    // >div{margin: 0;}
+                    p{
+                        // float: left;
+                        &.icon{
+                            float: left;
+                            margin-left: -.3rem;
+                            width: 1.18rem;
+                            height: 1.18rem;
+                            background: url(../../../images/activity/fish/card.png) no-repeat;
+                            background-size: 100% 100%;
+                            &.left{
+                                margin: -.2rem 0 0 ;
+                            }
+                        }
+
+                        &.detail{
+                            flex: 4;
+                            text-align: left;
+                            margin-left: .15rem;
+                            span{
+                                display: inline-block;
+                                &.award{
+                                    // margin-left: .14rem;
+                                    width: 1.66rem;
+                                    height: .36rem;
+                                    font-size: .18rem;
+                                    background: url(../../../images/activity/fish/card1.png) no-repeat;
+                                    background-size: 100% 100%;
+                                    &.card5{
+                                        background: url(../../../images/activity/fish/card5.png) no-repeat;
+                                        background-size: 100% 100%;
+                                    }
+                                    &.card15{
+                                        background: url(../../../images/activity/fish/card15.png) no-repeat;
+                                        background-size: 100% 100%;
+                                    }
+                                    &.card35{
+                                        background: url(../../../images/activity/fish/card35.png) no-repeat;
+                                        background-size: 100% 100%;
+                                    }
+                                    &.card50{
+                                        background: url(../../../images/activity/fish/card50.png) no-repeat;
+                                        background-size: 100% 100%;
+                                    }
+                                }
+                                &.normal{
+                                    height: .36rem;
+                                    vertical-align: middle;
+                                }
+                                &.btn{
+                                    margin-top: -.05rem;
+                                    margin-left: -.1rem;
+                                    width: 1.85rem;
+                                    height: .73rem;
+                                    text-align: center;
+                                    line-height: .7rem;
+                                    font-size: .24rem;
+                                    color: #08655c;
+                                    font-weight: bold;
+                                    background: url(../../../images/activity/fish/enable.png) no-repeat;
+                                    background-size: 100% 100%;
+                                    &.recieive{
+                                        color: #9e4501;
+                                        background: url(../../../images/activity/fish/receive.png) no-repeat;
+                                        background-size: 100% 100%;
+                                    }
+                                    &.recieived{
+                                        color: #071633;
+                                        background: url(../../../images/activity/fish/received.png) no-repeat;
+                                        background-size: 100% 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.second{
+                        .detail{text-align: left;margin-left: -0.5rem;}
+                        .award{margin-left: 0 !important;margin-right:.14rem;}
+                        .btn{ float: right;}
+                        .icon{margin-right: .2rem;}
+                    }
+                    &.last{
+
+                        .icon{
+                            float: left;
+                            width: 1.67rem;
+                            height: 1.85rem;
+                            margin-left: .1rem;
+                            width: 1.67rem;
+                            height: 1.6rem;
+                            background: url(../../../images/activity/fish/final.png) no-repeat;
+                            background-size: 100% 100%;
+                        }
+                        .detail{
+                            line-height: .3rem;
+                            margin-top:.1rem;
+                            .award{margin-left: 0;}
+                            .btn{margin-left: -.1rem;}
+                        }
+                        .normal{
+                            color: #8999f3;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom{
+            position: absolute;
+            bottom: -.55rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 110%;
+            height: 3.8rem;
+            background: url(../../../images/activity/fish/bottom.png) no-repeat;
+            background-size: 100% 100%;
+            z-index: 1;
+        }
+    }
+}
+.success-pop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    z-index: 14;
+    .successbg{
+        margin: 2rem auto;
+        text-align: center;
+        width: 4.5rem;
+        font-size: .22rem;
+        p{
+            margin: 0 auto;
+        }
+        .title{
+            width: 4.53rem;
+            height: .76rem;
+            background: url(../../../images/activity/fish/title.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        .img{
+            position: relative;
+            // margin: .58rem auto;
+            width: 3.75rem;
+            height: 3.58rem;
+
+            background: url(../../../images/activity/fish/bling.png) no-repeat;
+            background-size: 100% 100%;
+
+            &:before{
+                content: '';
+                position: absolute;
+                top: .8rem;
+                left: .8rem;
+                width: 2rem;
+                height: 2rem;
+                background: url(../../../images/activity/fish/card.png) no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+        .name{
+            margin-bottom: .2rem;
+            font-size: .48rem;
+            color: #fff177;
+            font-weight: bold;
+        }
+        .normal{
+            width: 4.24rem;
+            height: .4rem;
+            line-height: .4rem;
+            color: #ccc;
+            background: url(../../../images/activity/fish/packagebg.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        .closebtn{
+            margin-top: .2rem;
+            width: 2.3rem;
+            height: .78rem;
+            line-height: .78rem;
+            font-size: .36rem;
+            font-weight: 600;
+            color: #9e4501;
+            background: url(../../../images/activity/fish/receive.png) no-repeat;
+            background-size: 100%;
+        }
+    }
+}

@@ -1,0 +1,273 @@
+
+
+.c-rank {
+	display: flex;
+	height: 2.66rem;
+	background: url(../../images/bigImage/game-rank-bg.jpg) no-repeat center top;
+	background-size: 100% 2.66rem;
+	position: relative;
+	&:after{
+		content: '';
+		width: 100%;
+		height: 1px;
+		background: url(../../images/game/c-line.png) no-repeat;
+		background-size: 100% 1px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	};
+	.c-rank-award {
+		flex: 0 0 21.25%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		.game-rank-icon {
+			width: 1.2rem;
+			height: 1.2rem;
+			background: url(../../images/game/game-rank-icon.png) no-repeat;
+			background-size: 1.2rem 1.2rem;
+			font-size: 0.26rem;
+			color: #5ea0ff;
+			line-height: 1.5rem;
+		}
+		.cj-text {
+			font-size: 0.22rem;
+			color: #fee767;
+			margin: 0.05rem 0 0.2rem 0;
+		}
+		.btn-rank {
+			display: block;
+			width: 1.36rem;
+			height: 0.46rem;
+			background: url(../../images/game/check-more.png) no-repeat;
+			background-size: 1.36rem 0.46rem;
+		}
+	}
+	.c-rank-items {
+		flex: 0 0 78.75%;
+		.rank-list {
+			font-size: 0.24rem;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			position: absolute;
+			right: 0.11rem;
+			top: 0.1rem;
+			z-index: 2;
+			.c-rank-time {
+				color: #3f93ff;
+				font-size: 0.3rem;
+				padding-right: 0.1rem;
+			}
+			.rank-list-check {
+				width: 1.43rem;
+				height: 0.4rem;
+				position: relative;
+				top: 0.04rem;
+			}
+		}
+
+		ul {
+			height: 2.66rem;
+			display: flex;
+		}
+		li {
+			flex: 0 0 33.33%;
+			text-align: center;
+			position: relative;
+			&:nth-child(2) .item-box,&:nth-child(3) .item-box {
+				transform: scale(0.8);
+				transform-origin: center bottom;
+			}
+
+			.item-container {
+				/*width: 100%;*/
+				position: absolute;
+				left: 20%;
+				bottom: 0.28rem;
+			}
+			.item-box {
+				position: relative;
+				width: 0.7rem;
+				height: 0.7rem;
+				margin: 0.27rem auto 0;
+				em {
+					width: 0.62rem;
+					height: 0.23rem;
+					background: url(../../images/pic-half.png) no-repeat;
+					background-size: 0.62rem 0.23rem;
+					font-size:0.18rem;
+					color: #fff;
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					text-align: center;
+					font-style: normal;
+				}
+			}
+			.item-box-pic {
+				width: 0.7rem;
+				height: 0.7rem;
+				border-radius: 50%;
+				background: #5274c2;
+				border: 1px solid #5274c2;
+			}
+			.item-name {
+				display: block;
+				font-size: 0.22rem;
+				color: #fff;
+				height: 0.26rem;
+				line-height: 0.26rem;
+				margin: 0.12rem 0 0.08rem 0;
+				display: block;
+				overflow: hidden;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+			}
+			.item-award {
+				width: 1.5rem;
+				font-size: 0.22rem;
+				color: #faeb4b;
+				height: 0.26rem;
+				line-height: 0.26rem;
+				display: block;
+				overflow: hidden;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+			}
+
+		}
+	}
+
+}
+.c-horn {
+	display: flex;
+	align-items: center;
+	height: 0.7rem;
+	overflow: hidden;
+	font-size: 0.24rem;
+	padding-left: 0.95rem;
+	background: url(../../images/icon-horn.png) no-repeat 0.3rem center #141a2c;
+	background-size: 0.5rem 0.46rem;
+	position: relative;
+	&:after {
+		content: '';
+		width: 100%;
+		height: 0.02rem;
+		background: url(../../images/game/c-line.png) no-repeat;
+		background-size: 100% 0.02rem;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	};
+	.c-horn-text {
+		width: 100%;
+		position: relative;
+		height: 0.7rem;
+		ul {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+		}
+		li{
+			height: 0.7rem;
+			line-height: 0.7rem;
+			 overflow: hidden;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		}
+	}
+}
+.game-content-bg {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	overflow: hidden;
+	background: url(../../images/game-bg.jpg) repeat-x;
+	background-size: 100% 100%;
+}
+
+
+.game-army,.game-tennis,.game-football,.game-legion,.game-moto,.game-sanguo {
+	width: 1.62rem;
+	height: 1.76rem;
+}
+.c-game-groups {
+	width: 100%;
+	height: 3.75rem;
+
+	padding: 0.4rem 0;
+	.game-itmes-box {
+		height: 3.75rem;
+		position: relative;
+		.gameStyle1 {
+			width: 7.8rem;
+		}	
+		.gameStyle2 {
+			width: 9.8rem;
+		}
+	}
+	.game-items {
+		height: 3.75rem;
+		position: absolute;
+		right: 0;
+		left: 0;
+		overflow: hidden;
+		ul {
+			width: 7.8rem;
+			position: absolute;
+		}
+		li {
+			float: left;
+			margin-left: 0.25rem;
+			margin-bottom: 0.15rem;
+			position: relative;
+			&:first-child {
+				margin-left: 0.08rem;
+				em.text {
+					position: absolute;
+					right: 0.18rem;
+					bottom: 0.4rem;
+					font-size: 0.24rem;
+					color: #fff;
+					z-index: 2;
+				}
+			};
+			img {
+				width: 1.62rem;
+    			height: 1.62rem;
+    			&.game-dart {
+					width: 3.62rem;
+					height: 1.62rem;
+					position: relative;
+					left: 0.08rem;
+				}
+			}
+		}
+
+	}
+	.game-banner {
+		height: 1.9rem;
+		color: red;
+		background: url(../../images/game-banner-bg.png) no-repeat center bottom;
+		background-size: 6.79rem 1.03rem;
+	}
+	.game-banner-box {
+		width: 5.84rem;
+		height: 1.44rem;
+		border: 0.03rem solid #4c1066;
+		margin: 0 auto;
+	}
+	.mt-pic {
+		width: 5.84rem;
+		height: 1.44rem;
+		background: #eee;
+	}
+}

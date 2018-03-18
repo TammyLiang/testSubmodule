@@ -1,0 +1,461 @@
+.circle{
+	width: 1.2rem;
+	height: 1.2rem;
+	box-sizing:border-box;
+	border: 0.04rem solid #c6c5ca;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.xuanzhuan {
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    left: -0.07rem;
+    top: -0.24rem;
+    transform-origin: center center;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+    from{transform:  rotate(0);}
+    to{transform:  rotate(360deg);}
+}
+.g-Heavy {
+	width: 0.5rem;
+	height: 0.47rem;
+	background: url(../../images/task/heavy.png) no-repeat;
+	/*width: 0.6rem;
+	height: 0.61rem;
+	background: url(../../images/game/sd-icon.png) no-repeat;*/
+	background-size: 100% 100%;
+	/*margin-bottom: 0.05rem;*/
+	/*position: relative;*/
+	/*top: 0.05rem;*/
+	.red-dot {
+		display: block;
+		width: 0.18rem;
+		height: 0.18rem;
+		background: #FF3A46;
+		border-radius: 50%;
+		position: absolute;
+		/*left: -0.02rem;*/
+		right: -0.06rem;
+    	top: -0.01rem;
+		z-index: 2;
+	}
+	.sd-tips {
+		width: 0.41rem;
+		height: 0.19rem;
+		background: url(../../images/game/sd-tips.png) no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		right: -0.15rem;
+    	top: -0.05rem;
+		z-index: 2;
+	}
+}
+.c-header {
+	display: flex;
+	padding-top: .2rem;
+	height: 1.44rem;
+	width: 100%;
+	background: url(../../images/headbj.png) repeat-x;
+	background-size: 100% 1.44rem;
+	box-sizing: border-box;
+
+	.g-personal {
+		flex: .55;
+		display: flex;
+		box-sizing: border-box;
+		padding: 0.1rem 0 0 0.15rem;
+		.g-pic-box {
+			position: relative;
+			top: 0.08rem;
+			width: 1rem;
+			height: .8rem;
+			text-align: center;
+			.icon-pumpkin {
+				width: 0.8rem;
+				height: 0.93rem;
+				background: url(../../images/pumpkin/pumpkin.png) no-repeat;
+				background-size: 0.8rem 0.93rem;
+				position: absolute;
+				left: 50%;
+				top: -0.1rem;
+				transform: translateX(-50%);
+				z-index: 2;
+			}
+			.g-pic {
+				width: .8rem;
+				height: .8rem;
+				border-radius: 50%;
+				position: relative;
+				/*&:after {
+					content: '';
+					.circle;
+					width: .8rem;
+					height: .8rem;
+				}*/
+			}
+			.g-login{
+				display: inline-block;
+				margin-top: .12rem;
+				padding-top: .15rem;
+				width: .98rem;
+				height: .98rem;
+				line-height: .35rem;
+				background: #1b3e73;
+				border-radius: 50%;
+				box-sizing: border-box;
+				&:after {
+					content: '';
+					.circle;
+				}
+			}
+			.g-accoutid {
+				display: block;
+				width: 100%;
+				height: 0.27rem;
+				line-height: 0.27rem;
+				text-align: center;
+				background: rgba(151,152,180,.8);
+				font-size: 0.16rem;
+				color: #290025;
+				position: relative;
+				top: -0.25rem !important;
+				z-index: 2;
+				border-radius: .05rem;
+				&.down{top: -.1rem;}
+			}
+		}
+		.g-info {
+			display: flex;
+			/*align-items: center;*/
+			flex-direction: column;
+			justify-content: center;
+			margin-left: 0.2rem;
+			h1 {
+				font-size: 0.3rem;
+				color: #fff;
+				margin: 0 0 0.06rem 0;
+			}
+			.g-info-box {
+				height: 0.5rem;
+				display: flex;
+				align-items: center;
+				.g-leaf {
+					width: 0.3rem;
+					height: 0.3rem;
+				}
+				.g-leaf-amount {
+					font-size: 0.28rem;
+					color: #faeb4b;
+					margin: 0  0.1rem;
+				}
+				.g-add {
+					width: 0.5rem;
+					height: 0.5rem;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.g-items {
+		flex: .5;
+		box-sizing: border-box;
+		ul {
+			font-size: 0;
+			padding-top: 0.12rem;
+			float: right;
+		}
+
+		li {
+			display: inline-block;
+			text-align: center;
+			font-size: 0.22rem;
+			line-height: .4rem;
+			color: #fff;
+			margin-right: 0.15rem;
+			position: relative;
+			z-index: 1;
+			&.game-head-task,&.game-head-message {
+				z-index:2;
+				top: 0.04rem;
+			};
+			.cz-bill {
+				position: relative;
+    			top: 0.05rem;
+			}
+			.gh-box {
+				height: 0.47rem;
+				position: relative;
+				.message,.g-Heavy {
+					position: absolute;
+					left: 50%;
+					bottom: 0;
+					transform: translateX(-50%);
+					margin-bottom: 0.03rem;
+				}
+			}
+			.g-item-box {
+				width: 0.74rem;
+				height: 0.74rem;
+				background: url(../../images/game/game-task.png) no-repeat;
+				background-size:  0.74rem 0.74rem;
+				border-radius: 50%;
+				margin: 0 auto ;
+				img {
+					position: absolute;
+					left: 0;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					margin: auto;
+				}
+				&.caijin{
+					background: url('../../images/activity/caijin.png') no-repeat;
+					background-size:  0.74rem 0.74rem;
+				}
+				&.message{
+					width: 0.52rem;
+					height: 0.42rem;
+					text-align: center;
+					border-radius: 0;
+					background: url('../../images/game/game-message.png') no-repeat;
+					background-size: 100% 100%;
+					em{
+						display: inline-block;
+						padding: 0 .02rem;
+						min-width: 0.22rem;
+						height: 0.22rem;
+						line-height: .2rem;
+						background: #FF3A46;
+						border-radius: 50%;
+						font-size: .14rem;
+						position: absolute;
+						right: -.1rem;
+						top: -.1rem;
+						z-index: 2;
+					}
+				}
+			}
+		}
+	}
+	.icon-task {
+		width: 0.45rem;
+		height: 0.43rem;
+	}
+	.icon-message {
+		width: 0.43rem;
+		height: 0.44rem;
+	}
+	.login-small{
+		position: absolute;
+		right: -.9rem;
+		bottom: -.9rem;
+		padding: .25rem 0;
+		width: 1.93rem;
+		height: 1.42rem;
+		line-height: .5rem;
+		text-align: center;
+		font-size: .2rem;
+		box-sizing: border-box;
+		background: url(../../images/login/login-small.png) no-repeat;
+		background-size: 100% 100%;
+		z-index: 3;
+		.close{
+			position: absolute;
+			top: .3rem;
+			right: .2rem;
+			width: .4rem;
+			height: .4rem;
+			text-align: right;
+			&:after{
+				content: '';
+				display: inline-block;
+
+				// position: absolute;
+				// top: 0;
+				width: .13rem;
+				height: .13rem;
+				vertical-align: top;
+				background: url(../../images/login/close-small.png) no-repeat;
+				background-size: 100%;
+			}
+		}
+		i{
+			color: #fedb46;
+		}
+	}
+}
+.feed{
+	margin-right: .1rem;
+	width: .8rem;
+	height: .8rem;
+	border-radius: 0;
+	&.two{
+		position: relative;
+		background: url(../../images/feedback/icon/huafei.png) no-repeat;
+		background-size: 100% 100%;
+		&:after{
+			content: '';
+			.rotatebg;
+			width: 1.6rem;
+			height: 1.6rem;
+			left: -.42rem;
+			top: -.38rem;
+			background: url(../../images/feedback/icon/huafei_guang.png) no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+	&.six{
+		position: relative;
+		background: url(../../images/feedback/icon/tehui.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	&.fifteen{
+		position: relative;
+		background: url(../../images/feedback/icon/xianshitehui.png) no-repeat;
+		background-size: 100% 100%;
+		top: 0.02rem;
+	}
+	&.fifty{
+		position: relative;
+		background: url(../../images/feedback/icon/huangjin.png) no-repeat;
+		background-size: 100% 100%;
+
+		&:after{
+			content: '';
+			.rotatebg;
+			width: 1.5rem;
+    		height: 1.5rem;
+    		left: -0.35rem;
+			background: url(../../images/feedback/icon/huangjin_circle.png) no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+	&.onehundred{
+		position: relative;
+		background: url(../../images/feedback/icon/baijin.png) no-repeat -0.08rem -0.05rem;
+		background-size: 100% 100%;
+		margin-right: 0;
+		&:after{
+			content: '';
+			.rotatebg;
+			top: -0.38rem;
+		    left: -0.4rem;
+		    width: 1.5rem;
+		    height: 1.5rem;
+			background: url(../../images/feedback/icon/baijin_circle.png) no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+	&.fivehundreds{
+		position: relative;
+		background: url(../../images/feedback/icon/zungui.png) no-repeat;
+		background-size: 100% 100%;
+		&:after{
+			content: '';
+			.rotatebg;
+			width: 1.4rem;
+			height: 1.4rem;
+			left: -.28rem;
+			top: -.28rem;
+			background: url(../../images/feedback/icon/zungui_guang.png) no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+	&.onethousands{
+		position: relative;
+		background: url(../../images/feedback/icon/exclusive.png) no-repeat;
+		background-size: 100% 100%;
+		&:after{
+			content: '';
+			.rotatebg;
+			width: 1.5rem;
+			height: 1.5rem;
+			left: -.38rem;
+			top: -.4rem;
+			background: url(../../images/feedback/icon/huangjin_circle.png) no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+	&.twothousands{
+		position: relative;
+		background: url(../../images/feedback/icon/baoxiang.png) no-repeat;
+		background-size: 100% 100%;
+		&:after{
+			content: '';
+			.rotatebg;
+			width: 1rem;
+			height: 1rem;
+			left: -.1rem;
+			top: -.1rem;
+			background: url(../../images/feedback/icon/zungui_guang.png) no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+	&.fivethousands{
+		position: relative;
+		background: url(../../images/feedback/icon/extraordinary-preference.png) no-repeat;
+		background-size: 100% 100%;
+		&:after{
+			content: '';
+			.rotatebg;
+			width: 1.4rem;
+			height: 1.4rem;
+			left: -.32rem;
+			top: -.35rem;
+			background: url(../../images/feedback/icon/baijin_circle.png) no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+}
+.circle-bg{
+	.rotatebg;
+	top: -.35rem;
+	left: -.2rem;
+	width: 1.3rem;
+	height: 1.3rem;
+	&.six{
+		// width: 1.3rem;
+		// height: 1.3rem;
+		background: url(../../images/feedback/icon/tehui_circle2.png) no-repeat;
+		background-size: 100% 100%;
+	}
+
+	&.fifteen{
+		top: -.6rem;
+		left: -.5rem;
+		width: 1.8rem;
+		height: 1.8rem;
+		background: url(../../images/feedback/icon/tehui_circle.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	&.twothousands{
+		&:before{
+			content: '';
+			display: inline-block;
+			width: 1.6rem;
+			height: 1.6rem;
+			background: url(../../images/feedback/icon/tehui_circle2.png) no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+}
+.rotatebg{
+	position: absolute;
+	top: -.3rem;
+	left: -.3rem;
+	width: 1.2rem;
+	height: 1.2rem;
+	animation: rotate 2s linear infinite;
+}
+
+@media (max-width:325px){
+    .c-header .g-personal .g-info .g-info-box  .g-leaf-amount {
+		margin: 0 0 0 0.1rem;
+	}
+}
+

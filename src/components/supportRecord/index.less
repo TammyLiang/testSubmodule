@@ -1,0 +1,115 @@
+@import "../../common/base.css";
+.support{
+    padding: 0 .24rem;
+    text-align: left;
+    font-size: .3rem;
+    height: .84rem;
+    line-height: .84rem;
+    i{
+        float: right;
+        margin-top: .2rem;
+        width: .45rem;
+        height: .46rem;
+        background: url("../../images/tips.png") no-repeat;
+        background-size: 100%;
+    }
+}
+.title,li{
+    display: flex;
+    height: .84rem;
+    font-size: .3rem;
+    color: #fedb46;
+    span{
+        flex: 1;
+        line-height: .84rem;
+    }
+}
+.title{background: #193b73;padding: 0 .2rem;}
+ul{
+    li{
+        margin: 0 .2rem;
+        color: #fff;
+        border-bottom: 1px solid #343c4f;
+        span img{
+            // margin-left: -.4rem;
+            width: .4rem;
+            height: .65rem;
+            vertical-align: middle;
+        }
+    }
+}
+.state-btn{
+    display: inline-block;
+    width: 1.5rem;
+    height: 0.6rem;
+    line-height: .6rem;
+    color: #ccc;
+    font-size: .25rem;
+    font-style: normal;
+    background: url("../../images/game/lq-btn.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+.rule-wrap{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3.9rem;
+    text-align: left;
+    font-size: .24rem;
+    background: #193b73;
+    color: #ccc;
+    box-sizing: border-box;
+    >p{padding: 0 .34rem}
+    .rule-detail{
+        padding: .2rem .34rem;
+        height: 2.9rem;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling : touch;
+        p{
+            line-height: .4rem;
+            // padding: .24rem 0 .3rem;
+        }
+    }
+    >p:first-child{
+        line-height: .8rem;
+        font-size: .28rem;
+        border-bottom: 1px solid #304f81;
+        span{
+            float: right;
+            margin-top: .2rem;
+            width: 0.4rem;
+            height: .84rem;
+        }
+        i{
+            float: right;
+            width: 0.2rem;
+			height: 0.34rem;
+            background: url("../../images/h-back.png") no-repeat;
+            background-size: 100%;
+            transform: rotate(-90deg);
+        }
+    }
+
+}
+.support-box{
+    position: absolute;
+    top: 3.7rem;
+    bottom: 1.23rem;
+    width: 100%;
+    overflow: hidden;
+}
+.back-box{
+    position: absolute;
+    top: 2.8rem;
+    bottom: 1.23rem;
+    width: 100%;
+    overflow: hidden;
+}
+.rule-enter-active, .rule-leave-active {
+    transform: translateY(0);
+      transition: all .5s
+}
+.rule-enter, .rule-leave-to  {
+  transform: translateY(3.6rem);
+}

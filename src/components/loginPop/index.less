@@ -1,0 +1,108 @@
+.login-pop{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: .36rem;
+    text-align: center;
+    background: url(../../images/login/loginbg.jpg) no-repeat;
+    background-size: 100% 100%;
+    z-index: 20;
+    .login-bg{
+        position: fixed;
+        padding: 0 .3rem;
+        display: flex;
+        width: 100%;
+        bottom: .8rem;
+        text-align: center;
+        box-sizing: border-box;
+        /*p{
+            flex:.5;
+        }*/
+    }
+    .login-btn{
+        /*margin-right: .5rem;*/
+        width: 2.84rem;
+        height: 0.75rem;
+        line-height: .74rem;
+        background: url(../../images/login/loginbg.png) no-repeat;
+        background-size: 100% 100%;
+        color: #fff;
+        margin: 0 auto;
+        /*&.center{margin: 0 auto;}*/
+    }
+    .play-btn{
+        width: 2.54rem;
+        height: 0.75rem;
+        line-height: .75rem;
+        background: url(../../images/login/playbg.png) no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.tips-wrap{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    z-index: 20;
+    .tips-bg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 5.69rem;
+        height: 5.47rem;
+        text-align: center;
+        background: url(../../images/login/tipsbg.png) no-repeat;
+        background-size: 100% 100%;
+        .closebtn{
+            float: right;
+            margin-right: -.25rem;
+            margin-top: .65rem;
+            width: .69rem;
+            height: .69rem;
+            background: url(../../images/login/closebtn.png) no-repeat;
+            background-size: 100%;
+        }
+        .tips-content{
+            margin-top: 2rem;
+            padding: .6rem .4rem 0;
+            p:first-child{
+                line-height: .45rem;
+            }
+            p:last-child{
+                display: flex;
+                margin-top: .4rem;
+                span{
+                    display: inline-block;
+                    margin: 0 auto;
+                    width: 2rem;
+                    height: .69rem;
+                    vertical-align: middle;
+                    &.rebind{
+                        flex: .45;
+                        margin-right: .5rem;
+                        background: url(../../images/login/rebind.png) no-repeat;
+                        background-size: 100%;
+                    }
+                    &.usebtn{
+                        flex: .45;
+                        background: url(../../images/login/usebtn.png) no-repeat;
+                        background-size: 100%;
+                    }
+                    &.gologin{
+                        background: url(../../images/login/loginbtn.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}

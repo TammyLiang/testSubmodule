@@ -1,0 +1,174 @@
+.system-notice{
+    position: relative;
+    .no-record{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.gift-icon{
+    background: url(../../../images/game/gifticon.png) no-repeat;
+    background-size: 100%;
+}
+.notice-icon{
+    background: url(../../../images/game/noticeicon.png) no-repeat;
+    background-size: 100%;
+}
+.fontcolor{
+    font-size: .24rem;
+    color: rgba(255,255,255,.5);
+}
+ul{
+    height: 6.4rem;
+    overflow-y: scroll;
+    -webkit-overflow-scroll:touch;
+}
+    li{
+        padding: 0 .32rem;
+        height: 1.24rem;
+        text-align: left;
+        p:first-child{
+            float: left;
+            margin-top: .3rem;
+            width: .7rem;
+            height: .7rem;
+            .notice-icon;
+            &.gift {
+                .gift-icon;
+            }
+        }
+        p:last-child{
+            float: left;
+            margin: .3rem 0 0 .3rem;
+            width: 78%;
+            line-height: .4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space:nowrap;
+            span{
+                font-size: .24rem;
+                &:first-child{
+                    display: inline-block;
+                    position: relative;
+                    width: 100%;
+                    font-size: .28rem;
+                    em:first-child{
+                        // flex: .5;
+                        position: absolute;
+                        right: 34%;
+                        // margin-left: .2rem;
+                        width: .8rem;
+                        height: .4rem;
+                        line-height: .4rem;
+                        font-size: .24rem;
+                        text-align: center;
+                        color: rgba(255,255,255,.7);
+                        background: #273c69;
+                        border-radius: .2rem;
+
+                        &.read{
+                            color: #fff;
+                            background: #d77536;
+                        }
+                    }
+                    em:last-child{
+                        position: absolute;
+                        right: 0;
+                        // float: right;
+                        // flex: .5;
+                        .fontcolor
+                    }
+                }
+                &:last-child{
+                    color: rgba(255,255,255,.5);
+                    line-height: .5rem;
+                }
+            }
+        }
+
+    }
+// }
+
+.pop-mask .popbg{
+    height: 5.6rem !important;
+}
+.slot{
+    height: 3.3rem;
+    p{
+        text-align: left;
+        &:first-child{
+            height: 1.2rem;
+            font-size: .28rem;
+            em:first-child{
+                margin-right: .3rem;
+                display: inline-block;
+                width: .7rem;
+                height: .7rem;
+                .notice-icon;
+                vertical-align: middle;
+                &.gifticon{.gift-icon}
+            }
+            em:last-child{
+                float: right;
+
+                .fontcolor
+            }
+        }
+        &:last-child{
+            margin-top: .2rem;
+            height: 2.1rem;
+            text-align: left;
+            line-height: .4rem;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            -webkit-user-select: none;
+            .fontcolor;
+            span{
+                position: relative;
+                margin-top: .38rem;
+                // padding-left: .5rem;
+                // display: inline-block;
+                // width: 1.37rem;
+                height: .36rem;
+                font-size: .26rem;
+                color: #fff;
+                img{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: .44rem;
+                    height: .44rem;
+                    z-index: 3;
+                }
+                i{
+                    position: absolute;
+                    left: .2rem;
+                    top: .07rem;
+                    padding-left: .3rem;
+                    width: 1.4rem;
+                    height: .36rem;
+                    line-height: .38rem;
+                    text-align: center;
+                    background: #1f447f;
+                    box-sizing: border-box;
+                    border-top-right-radius: .5rem;
+                    border-bottom-right-radius: .5rem;
+                    z-index: 1;
+                    &:after{
+                        content: '';
+                        margin: .07rem .1rem 0;
+                        // display: inline-block;
+                        float: right;
+                        // vertical-align: middle;
+                        width: .28rem;
+                        height: .22rem;
+                        background: url(../../../images/game/blueleaf.png) no-repeat;
+                        background-size: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

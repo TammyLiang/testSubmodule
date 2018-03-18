@@ -1,0 +1,91 @@
+
+/* * { background-color: rgba(255,0,0,.2); }
+* * { background-color: rgba(0,255,0,.2); }
+* * * { background-color: rgba(0,0,255,.2); }
+* * * * { background-color: rgba(255,0,255,.2); }
+* * * * * { background-color: rgba(0,255,255,.2); }
+* * * * * * { background-color: rgba(255,255,0,.2); } */
+
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,form{
+    margin:0;
+}
+body{
+	font-size: .24rem;
+	line-height: 1;
+	font-family:"PingFangSC-Semibold";
+}
+button{
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+a:link,a:active,a:visited,a:hover{background: rgba(255,255,255,0);}
+img{
+	border: none;
+}
+ul,li{
+    padding-left:0;
+    list-style-type:none;
+}
+i,em{font-style: normal;}
+::-webkit-input-placeholder {
+　　color: #8c8c8c;
+}
+.no-record{
+    font-size: .28rem;
+    color: #284884;
+    text-align: center;
+
+}
+.no-record p{
+    margin: 35% auto 0;
+    width: 3rem;
+    height: 2.33rem;
+    background: url("../images/no-record.png") no-repeat;
+    background-size: 100%;
+}
+#profit-loader .container {
+        transform: translate(-50%, 80%);
+}
+.fragment-record-loader .container {
+    transform: translate(-50%, 40%);
+}
+.sp-title-bg {
+    height: 1.28rem;
+    line-height: 1.28rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #fff;
+    background: url(../images/game/profit-title-line.png) no-repeat center bottom;
+    background-size: 100% 0.02rem;
+}
+.pic_getprop {
+    width: 4.94rem;
+    height: 3.33rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -2.08rem;
+}
+a.btn-confirm {
+        display: block;
+        width: 3.28rem;
+        height: 1rem;
+        line-height: 1rem;
+        text-align: center;
+        font-size: 0.3rem;
+        color: #fff;
+        background: url(../images/game/lq-btn.png) no-repeat center center;
+        background-size: 2.25rem 0.76rem;
+        margin: 0.15rem auto 0;
+    }
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}

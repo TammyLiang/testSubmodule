@@ -1,0 +1,177 @@
+.c-dw,.single {
+	width: 7.14rem;
+	height: 11.47rem;
+	z-index: 15;
+}
+.fragment {
+	width: 7.2rem;
+	height: 11.55rem;
+	background: url(../../images/single/fragment.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.lottery-box {
+	padding-top: 0.37rem;
+}
+.single-box {
+	position: relative;
+	z-index: 3;
+}
+
+.single {
+	background: url(../../images/single/bg.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	text-align: center;
+	 transform: scale(0.9);
+	 padding-top: 0.1rem;
+	.lottery-bg {
+		width: 5.95rem;
+		height: 4.18rem;
+		background: url(../../images/single/lottery-bg.png) no-repeat;
+		background-size: 100% 100%;
+		margin: 0.15rem auto 0;
+	}
+	.l-title {
+		width: 3.95rem;
+		height: 0.45rem;
+		line-height: 0.45rem;
+		margin: 0 auto;
+		position: relative;
+		top: 0.12rem;
+		span {
+			font-size: 0.3rem;
+			margin: 0 0.6rem;
+			i {
+				color: #fee644;
+			}
+		}
+	}
+	.sold-package {
+		font-size: 0;
+		padding-right: 0.05rem;
+		.s-item {
+			display: inline-block;
+			width: 2.95rem;
+			height: 3.44rem;
+			background: url(../../images/single/package-bg.png) no-repeat;
+			background-size: 100% 100%;
+			margin: 0 0.07rem;
+			position: relative;
+		}
+		.pic-corner{
+			width: 1.25rem;
+			height: 1.25rem;
+			position: absolute;
+			left: -0.08rem;
+			top: -0.08rem;
+		}
+		.s-tips {
+			font-size: 0.18rem;
+			color: #2A1C4C;
+		}
+		.btn-buy {
+			width: 2.54rem;
+			height: 0.59rem;
+			background: url(../../images/single/btn-buy.png) no-repeat;
+			background-size: 100% 100%;
+			margin: 0.1rem auto 0.06rem;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 0.15rem 0;
+			&.active {
+				background: url(../../images/single/btn-buy-gray.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.price {
+				font-size: 0.3rem;
+				color: #ffecb4;
+			}
+			.text {
+				font-size: 0.18rem;
+				color: #fff;
+			}
+
+		}
+		.s-item-pic {
+			font-size: 0;
+			transform: scale(0.95);
+			padding-right: 0.15rem;
+			padding-top: 0.3rem;
+			.pic,.text {
+				display: inline-block;
+			}
+			.pic img {
+				width: 1.66rem;
+				height: 1.66rem;
+				position: relative;
+				top: 0.09rem;
+			}
+			.p-text1 {
+				width: 0.93rem;
+				height: 1.44rem;
+			}
+			.p-text2 {
+				width: 1.03rem;
+				height: 1.44rem;
+			}
+		}
+
+	}
+	.sold-mar {
+		display: inline-block;
+	}
+	.title {
+		width: 5.7rem;
+		height: 2.39rem;
+		position: relative;
+		top: 0.35rem;
+		z-index: 2;
+	}
+	.top-flag img{
+		width: 4.1rem;
+		height: 1.67rem;
+		position: absolute;
+		left: 50%;
+		top: -0.4rem;
+		transform: translateX(-50%);
+		z-index: 1;
+	}
+	.close img {
+		width: 0.49rem;
+		height: 0.52rem;
+		position: absolute;
+		right: 0.3rem;
+		top: 0.21rem;
+	}
+	.sold-tips {
+		width: 4.37rem;
+		height: 0.83rem;
+		background: url(../../images/single/sold-out.png) no-repeat;
+		background-size: 100% 100%;
+		margin: 0.27rem auto -0.06rem;
+		display: flex;
+		align-items: center;
+		.sold-box {
+			font-size: 0.3rem;
+			font-weight: bold;
+			height: 0.4rem;
+			line-height: 0.4rem;
+			margin: 0 auto 0.1rem;
+			display: flex;
+			align-items: center;
+			span {
+				color: #fee644;
+				margin: 0 0.02rem;
+			}
+		}
+		
+	}
+}
+
