@@ -19,6 +19,7 @@ export default {
       },
       checkFormat : function(judge, info) {
           if(!judge) {
+            console.log('12')
               return info;
           } else {
               return false
